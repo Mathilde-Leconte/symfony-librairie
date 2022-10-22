@@ -1,0 +1,13 @@
+{% extends 'base-backend.html.twig' %}
+
+{% block title %}Edit Book{% endblock %}
+
+{% block body %}
+    <h1>Edit Book</h1>
+
+    {{ include('adim_book/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_adim_book_index') }}">back to list</a>
+
+    {{ include('adim_book/_delete_form.html.twig') }}
+{% endblock %}
